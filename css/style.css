@@ -1,0 +1,493 @@
+/* Подключение Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200&display=swap');
+
+/* Сброс отступов и базовые стили */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+font-weight: 200;
+text-transform: uppercase;
+background-color: #78573f; /* коричневый фон */
+color: #fff;
+overflow-x: hidden;
+}
+
+/* Маленький логотип фиксированный в верхнем левом углу */
+.small-logo {
+position: fixed;
+top: 20px;
+left: 20px;
+font-weight: 700;
+font-size: 20px;
+z-index: 100;
+}
+.small-logo .black { color: black; }
+.small-logo .pink { color: #F4C2C2; }
+
+/* Меню под маленьким логотипом */
+.menu {
+position: absolute;
+top: 90px;
+left: 160px;
+}
+.menu ul {
+list-style: none;
+display: flex;
+gap: 40px;
+}
+.menu a {
+text-decoration: none;
+color: #F4C2C2;
+font-weight: 200;
+text-transform: uppercase;
+}
+.menu a.active { color: #F4C2C2; }
+
+/* Приветствие */
+.welcome-text {
+position: absolute;
+top: 165px;
+left: 120px;
+font-size: 60px;
+font-weight: 200;
+text-transform: uppercase;
+color: #858539; /* оливково-зеленый */
+}
+
+/* Контейнер с фотографиями */
+.hero-images {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+gap: 20px;
+position: relative; /* нужно, чтобы big-logo позиционировался от этого контейнера */
+margin-top: 250px;
+padding-left: 120px;
+padding-right: 120px;
+}
+
+/* Горизонтальное фото слева */
+.hero-images img.horizontal {
+width: 52%;
+max-width: 730px;
+height: auto;
+border-radius: 5px;
+align-self: flex-end;
+}
+
+/* Вертикальное фото справа */
+.hero-images img.vertical {
+width: 37%;
+max-width: 440px;
+height: auto;
+border-radius: 5px;
+align-self: flex-start;
+margin-left: 30px;
+}
+
+/* Большой логотип между фото */
+.big-logo {
+position: absolute;
+top: 10%; /* возвращаем примерно туда, где он был */
+left: 50%;
+transform: translateX(-50%);
+font-size: 60px;
+font-weight: 200;
+text-transform: uppercase;
+z-index: 10;
+}
+.big-logo .black { color: black; }
+.big-logo .pink { color: #F4C2C2; }
+
+/* Подключение Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,200&display=swap');
+
+/* Сброс отступов и базовые стили */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+font-weight: 200;
+text-transform: uppercase;
+background-color: #78573f; /* фон для UUTTA */
+color: #fff;
+overflow-x: hidden;
+}
+
+/* Маленький логотип фиксированный в верхнем левом углу */
+.small-logo {
+position: fixed;
+top: 20px;
+left: 20px;
+font-weight: 700;
+font-size: 20px;
+z-index: 100;
+}
+.small-logo .black { color: black; }
+.small-logo .pink { color: #F4C2C2; }
+
+/* Меню под маленьким логотипом (как на первом слайде) */
+.menu {
+position: absolute;
+top: 90px; /* на уровне меню главной */
+left: 160px; /* чуть смещено от логотипа */
+}
+.menu ul {
+list-style: none;
+display: flex;
+gap: 40px; /* расстояние между пунктами */
+}
+.menu a {
+text-decoration: none;
+color: #F4C2C2; /* цвет ссылок как на первом сайте */
+font-weight: 200;
+text-transform: uppercase;
+}
+.menu a.active { color: black; }
+
+/* Кнопка "PALAA ETUSIVULLE" справа */
+.back-button {
+position: absolute;
+top: 90px; /* на уровне меню */
+right: 50px; /* сильно вправо */
+border: 1px solid black;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.back-button a {
+text-decoration: none;
+color: #F4C2C2;
+font-weight: 200;
+text-transform: uppercase;
+}
+
+/* Заголовок UUTTA по центру и выше */
+.section-title {
+text-align: center;
+margin-top: 120px; /* выше из-за больших фото */
+font-size: 60px;
+font-weight: 200;
+text-transform: uppercase;
+color: #858539;
+}
+
+/* Фотографии */
+.new-photos {
+display: flex;
+justify-content: center;
+gap: 40px; /* увеличено расстояние между фото */
+margin-top: 50px;
+flex-wrap: wrap;
+}
+.new-photos img {
+width: 250px; /* увеличенный размер */
+height: auto;
+border-radius: 5px;
+}
+/* Фон страницы */
+body {
+background-color: #78573f;
+color: #fff;
+}
+
+/* Маленький логотип фиксированный */
+.small-logo {
+position: fixed;
+top: 20px;
+left: 20px;
+font-weight: 700;
+font-size: 20px;
+z-index: 100;
+}
+.small-logo .black { color: black; }
+.small-logo .pink { color: #F4C2C2; }
+
+/* Меню */
+.menu {
+position: absolute;
+top: 90px;
+left: 160px;
+}
+.menu ul {
+list-style: none;
+display: flex;
+gap: 40px;
+}
+.menu a {
+text-decoration: none;
+color: #F4C2C2;
+font-weight: 200;
+text-transform: uppercase;
+}
+.menu a.active { color: black; }
+
+/* Сетка товаров */
+.products {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 40px;
+padding: 250px 120px 100px 120px;
+}
+
+/* Каждый товар */
+.product {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.product img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+/* Подпись под фото */
+.product-info {
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 8px;
+font-size: 14px;
+}
+
+.price {
+color: #F4C2C2;
+font-weight: 200;
+}
+
+/* Стрелка для размеров */
+.arrow {
+cursor: pointer;
+color: #F4C2C2;
+font-size: 16px;
+user-select: none;
+transition: transform 0.3s ease;
+}
+
+/* Скрытые размеры */
+.sizes {
+display: none;
+width: 100%;
+font-size: 12px;
+color: #F4C2C2;
+margin-top: 5px;
+text-align: right;
+}
+
+/* Кнопка возврата */
+.back-button {
+display: block;
+text-align: center;
+margin: 60px auto;
+text-decoration: none;
+color: #F4C2C2;
+font-size: 16px;
+border: 1px solid #F4C2C2;
+padding: 10px 25px;
+border-radius: 4px;
+text-transform: uppercase;
+transition: all 0.3s ease;
+width: fit-content;
+}
+
+.back-button:hover {
+background-color: #F4C2C2;
+color: #78573f;
+}
+/* Общие настройки */
+body {
+margin: 0;
+padding: 0;
+font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif;
+font-weight: 200;
+text-transform: uppercase;
+background-color: #78573f;
+color: #000; /* основной текст чёрный */
+overflow-x: hidden;
+}
+
+/* Маленький логотип */
+.small-logo {
+position: fixed;
+top: 20px;
+left: 20px;
+font-weight: 700;
+font-size: 20px;
+z-index: 100;
+}
+.small-logo .black { color: black; }
+.small-logo .pink { color: #F4C2C2; }
+
+/* Меню */
+.menu {
+position: absolute;
+top: 90px;
+left: 160px;
+}
+.menu ul {
+list-style: none;
+display: flex;
+gap: 40px;
+}
+.menu a {
+text-decoration: none;
+color: #F4C2C2;
+font-weight: 200;
+text-transform: uppercase;
+}
+.menu a.active { color: black; }
+
+/* Заголовок ABOUT US */
+.about-title {
+text-align: center;
+font-size: 60px;
+color: #858539;
+margin-top: 250px;
+}
+
+/* Текст о магазине */
+.about-text {
+max-width: 900px;
+margin: 30px auto 80px auto;
+font-size: 18px;
+line-height: 1.5;
+color: black;
+text-align: center;
+}
+.about-text .pink { color: #F4C2C2; }
+
+/* Контакты */
+.contacts {
+max-width: 600px;
+margin-left: 120px;
+margin-bottom: 100px;
+}
+
+.contacts h2 {
+color: black;
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.contact-item {
+display: flex;
+align-items: center;
+gap: 15px;
+margin-bottom: 15px;
+}
+
+.contact-label {
+color: black;
+font-weight: 200;
+width: 120px; /* фиксированная ширина для выравнивания */
+}
+
+.contact-text {
+color: #F4C2C2;
+font-weight: 200;
+}
+
+.store-address {
+margin-left: auto; /* выравнивание справа */
+color: black;
+text-align: left;
+}
+.store-address .pink { color: #F4C2C2; }
+
+/* Кнопка возврата */
+.back-button {
+display: block;
+text-align: center;
+margin: 60px auto;
+text-decoration: none;
+color: #F4C2C2;
+font-size: 16px;
+border: 1px solid #F4C2C2;
+padding: 10px 25px;
+border-radius: 4px;
+text-transform: uppercase;
+transition: all 0.3s ease;
+width: fit-content;
+}
+.back-button:hover {
+background-color: #F4C2C2;
+color: #78573f;
+}
+/* ===== Адаптивность (responsive) ===== */
+
+/* Планшеты (ширина экрана <= 1024px) */
+@media (max-width: 1024px) {
+/* Блок с фото на странице TUOTTEET */
+.products, .hero-images {
+display: grid;
+grid-template-columns: repeat(2, 1fr); /* 2 фото в ряд */
+gap: 20px;
+padding-left: 60px;
+padding-right: 60px;
+}
+
+/* Заголовки */
+.welcome-text {
+font-size: 40px;
+left: 20px;
+}
+.about-title {
+font-size: 45px;
+}
+
+/* Меню и логотип */
+.menu {
+left: 50px;
+top: 80px;
+gap: 20px;
+}
+.small-logo {
+font-size: 18px;
+}
+}
+
+/* Телефоны (ширина экрана <= 480px) */
+@media (max-width: 480px) {
+.products, .hero-images {
+grid-template-columns: 1fr; /* 1 фото в ряд */
+padding-left: 20px;
+padding-right: 20px;
+gap: 15px;
+}
+
+.welcome-text {
+font-size: 30px;
+left: 10px;
+}
+
+.about-title {
+font-size: 35px;
+}
+
+.about-text {
+font-size: 16px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+.menu {
+left: 20px;
+top: 80px;
+gap: 15px;
+}
+
+.small-logo {
+font-size: 16px;
+}
+}
